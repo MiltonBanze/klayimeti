@@ -1,0 +1,27 @@
+/*Imortando a fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/*CSS RESET*/
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+/*Variáveis*/
+:root{
+    --darkColor: #0d0d0d;
+    --middleColor: #262626;
+    --cleanColor: #f2f2f2;
+}
+::selection{
+    color: #f2f2f2;
+    background-color: #0d0d0d;
+}
+/*==================*/
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
