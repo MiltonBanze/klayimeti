@@ -32,9 +32,9 @@ body{
 main{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     width: auto;
-    overflow-x: scroll;
     gap: 1.4em;
 }
 section{
@@ -52,7 +52,16 @@ section .top{
     align-items: center;
     justify-content: space-between;
 }
-section .top h2{
+section .top form{
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+}
+section .top form label{
+    color: var(--cleanColor);
+    font-size: .8em;
+}
+section h2{
     color: var(--cleanColor);
     font-size: 1.2em;
     font-weight: 400;

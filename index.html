@@ -9,10 +9,28 @@
 <body>
     <main>
         <section data-city="Maputo">
+            
             <div class="top">
-                <h2>Maputo</h2>
+                <form>
+                    <label for="capital">Selecione a cidade</label>
+                    <select name="capital" class="capital" onchange="getCity()">
+                        <option value="Maputo">Maputo</option>
+                        <option value="Xai-Xai">Xai-Xai</option>
+                        <option value="Inhambane">Inhambane</option>
+                        <option value="Beira">Beira</option>
+                        <option value="Chimoio">Chimoio</option>
+                        <option value="Tete">Tete</option>
+                        <option value="Quelimane">Quelimane</option>
+                        <option value="Nampula">Nampula</option>
+                        <option value="Lichinga">Lichinga</option>
+                        <option value="Pemba">Pemba</option>
+                        
+                    </select>
+                </form>
+    
                 <p><span class="hours">HH</span> : <span class="minutes">mm</span> : <span class="seconds">ss</span></p>
             </div>
+            <h2 class="text">Verifque o clima da sua provincia</h2>
             <p class="value"> <span class="grades">XX</span> ºC</p>
             <div class="img">
                 <img src="img/clouds.png" alt="">
@@ -21,185 +39,7 @@
             
             <p class="env">Humidade: <span>70</span>%</p>
 
-            <div class="bottom">
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
         </section>
-        <!--
-        <section>
-            <div class="top">
-                <h2>Xai-Xai</h2>
-                <p><span class="hours">HH</span> : <span class="minutes">mm</span> : <span class="seconds">ss</span></p>
-            </div>
-            <p class="value"> <span>XX</span> ºC</p>
-            <div class="img">
-                <img src="img/clouds.png" alt="">
-                <p>Núvens dispersas</p>
-            </div>
-            
-            <p class="env">Humidade: <span>70%</span></p>
-
-            <div class="bottom">
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-        </section>
-        <section>
-            <div class="top">
-                <h2>Inhambane</h2>
-                <p><span class="hours">HH</span> : <span class="minutes">mm</span> : <span class="seconds">ss</span></p>
-            </div>
-            <p class="value"> <span>XX</span> ºC</p>
-            <div class="img">
-                <img src="img/clouds.png" alt="">
-                <p>Núvens dispersas</p>
-            </div>
-            
-            <p class="env">Humidade: <span>70%</span></p>
-
-            <div class="bottom">
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-        </section>
-        <section>
-            <div class="top">
-                <h2>Beira</h2>
-                <p><span class="hours">HH</span> : <span class="minutes">mm</span> : <span class="seconds">ss</span></p>
-            </div>
-            <p class="value"> <span>XX</span> ºC</p>
-            <div class="img">
-                <img src="img/clouds.png" alt="">
-                <p>Núvens dispersas</p>
-            </div>
-            
-            <p class="env">Humidade: <span>70%</span></p>
-
-            <div class="bottom">
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-        </section>
-        <section>
-            <div class="top">
-                <h2>Chimoio</h2>
-                <p><span class="hours">HH</span> : <span class="minutes">mm</span> : <span class="seconds">ss</span></p>
-            </div>
-            <p class="value"> <span>XX</span> ºC</p>
-            <div class="img">
-                <img src="img/clouds.png" alt="">
-                <p>Núvens dispersas</p>
-            </div>
-            
-            <p class="env">Humidade: <span>70%</span></p>
-
-            <div class="bottom">
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-        </section>
-        <section>
-            <div class="top">
-                <h2>Tete</h2>
-                <p><span class="hours">HH</span> : <span class="minutes">mm</span> : <span class="seconds">ss</span></p>
-            </div>
-            <p class="value"> <span>XX</span> ºC</p>
-            <div class="img">
-                <img src="img/clouds.png" alt="">
-                <p>Núvens dispersas</p>
-            </div>
-            
-            <p class="env">Humidade: <span>70%</span></p>
-
-            <div class="bottom">
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-        </section>
-        <section>
-            <div class="top">
-                <h2>Quelimane</h2>
-                <p><span class="hours">HH</span> : <span class="minutes">mm</span> : <span class="seconds">ss</span></p>
-            </div>
-            <p class="value"> <span>XX</span> ºC</p>
-            <div class="img">
-                <img src="img/clouds.png" alt="">
-                <p>Núvens dispersas</p>
-            </div>
-            
-            <p class="env">Humidade: <span>70%</span></p>
-
-            <div class="bottom">
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-        </section>
-        <section>
-            <div class="top">
-                <h2>Nampula</h2>
-                <p><span class="hours">HH</span> : <span class="minutes">mm</span> : <span class="seconds">ss</span></p>
-            </div>
-            <p class="value"> <span>XX</span> ºC</p>
-            <div class="img">
-                <img src="img/clouds.png" alt="">
-                <p>Núvens dispersas</p>
-            </div>
-            
-            <p class="env">Humidade: <span>70%</span></p>
-
-            <div class="bottom">
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-        </section>
-        <section>
-            <div class="top">
-                <h2>Lichinga</h2>
-                <p><span class="hours">HH</span> : <span class="minutes">mm</span> : <span class="seconds">ss</span></p>
-            </div>
-            <p class="value"> <span>XX</span> ºC</p>
-            <div class="img">
-                <img src="img/clouds.png" alt="">
-                <p>Núvens dispersas</p>
-            </div>
-            
-            <p class="env">Humidade: <span>70%</span></p>
-
-            <div class="bottom">
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-        </section>
-        <section>
-            <div class="top">
-                <h2>Pemba</h2>
-                <p><span class="hours">HH</span> : <span class="minutes">mm</span> : <span class="seconds">ss</span></p>
-            </div>
-            <p class="value"> <span>XX</span> ºC</p>
-            <div class="img">
-                <img src="img/clouds.png" alt="">
-                <p>Núvens dispersas</p>
-            </div>
-            
-            <p class="env">Humidade: <span>70%</span></p>
-
-            <div class="bottom">
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-        </section>
-        -->
     </main>
 
     <!--Font Awesome Kit-->

@@ -16,10 +16,9 @@ function updateClock() {
 updateClock();
 setInterval(updateClock, 1000);
 
-
-
 //Dados na tela
 function setData(data){
+    document.querySelector('.text').innerText = `Tempo em ${document.querySelector('.capital').value}`;
     document.querySelector('.grades').innerText = Math.floor(data.main.temp);
     document.querySelector('.img p').innerText = data.weather[0].description;
     document.querySelector('.env span').innerText = data.main.humidity;
@@ -33,10 +32,10 @@ async function searchCity(capital) {
     
     setData(data)
 }
-
+const value = document.querySelector('.capital');
 // Obtendo a cidade
 function getCity() {
-    const city = document.querySelector('main section h2').innerText;
+    const city = value.value;
 
     searchCity(city);
 }
