@@ -36,9 +36,12 @@ main{
     height: 100vh;
     width: auto;
     gap: 1.4em;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 section{
     background-color: var(--darkColor);
+    opacity: .9;
     border-radius: .4em;
     padding: .8em;
     box-shadow: .2em, .2em, #000000;

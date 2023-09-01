@@ -16,6 +16,15 @@ function updateClock() {
 updateClock();
 setInterval(updateClock, 1000);
 
+//Definindo a imagem do fundo
+
+function changeBG(town){
+    const bg = document.querySelector('main');
+
+    bg.style.background = `url(img/${town}.png)`
+    
+}
+
 //Dados na tela
 function setData(data){
     document.querySelector('.text').innerText = `Tempo em ${document.querySelector('.capital').value}`;
@@ -23,7 +32,7 @@ function setData(data){
     document.querySelector('.img p').innerText = data.weather[0].description;
     document.querySelector('.env span').innerText = data.main.humidity;
     document.querySelector('.img img').src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-    console.log(data)
+    
 }
 
 //Obtendo as informacoes de tempo
@@ -31,6 +40,7 @@ async function searchCity(capital) {
     const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${capital}&appid=${key}&lang=pt&units=metric`).then(response => response.json());
     
     setData(data)
+    changeBG(capital)
 }
 const value = document.querySelector('.capital');
 // Obtendo a cidade
