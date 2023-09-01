@@ -93,12 +93,3 @@ section .env{
     color: var(--cleanColor);
     font-size: .8em;
 }
-section .bottom{
-    display: flex;
-    gap: .6em;
-    justify-content: end;
-}
-section .bottom i{
-    color: var(--lightColor);
-    font-size: .8em;
-}
